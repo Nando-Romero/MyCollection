@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Colección de Videojuegos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎮 Mi Colección de Videojuegos</h1>
+
+  <div class="form-wrapper">
+    <form id="gameForm">
+      <input type="text" id="nombre" placeholder="Nombre del juego" required>
+      <select id="genero" required>
+        <option value="">-- Selecciona un género --</option>
+        <option value="Acción">Acción</option>
+        <option value="Aventura">Aventura</option>
+        <option value="RPG">RPG</option>
+        <option value="Deportes">Deportes</option>
+        <option value="Indie">Indie</option>
+        <option value="Lucha">Lucha</option>
+      </select>
+      <input type="number" id="puntuacion" placeholder="Puntuación (1-10)" min="1" max="10" required>
+      <input type="url" id="imagen" placeholder="URL de la portada del juego (opcional)">
+      <button type="submit">Agregar juego</button>
+    </form>
+  </div>
+
+  <div class="game-list" id="listaJuegos"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
